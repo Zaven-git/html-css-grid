@@ -1,0 +1,149 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.first {
+  padding: 150px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first h2 {
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #888;
+  margin: 0;
+}
+.first h1 {
+  letter-spacing: 5px;
+  font-weight: 400;
+  color: #666;
+  font-size: 40px;
+}
+.first div {
+  display: flex;
+}
+.first div a {
+  color: #777;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+}
+.first div a:hover {
+  background-color: #ccc;
+}
+.first div a:first-child {
+  border-left: 1px solid #ccc;
+}
+.first div a:last-child {
+  border-right: 1px solid #ccc;
+}
+#photo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  padding-bottom: 100px;
+  filter: grayscale(100%);
+}
+#photo div {
+  background-size: cover;
+}
+.left {
+  display: grid;
+  grid-auto-rows: 160px;
+  padding-left: 15px;
+  grid-gap: 10px;
+}
+.left div:first-child {
+  grid-row: span 3;
+  background-image: url(../images/wedding.jpg);
+}
+.left div:nth-child(2) {
+  grid-row: span 6;
+  background-image: url(../images/rocks.jpg);
+}
+.left div:nth-child(3) {
+  grid-row: span 2;
+  background-image: url(../images/falls2.jpg);
+}
+.left div:nth-child(4) {
+  grid-row: span 3;
+  background-image: url(../images/paris.jpg);
+}
+.left div:nth-child(5) {
+  grid-row: span 3;
+  background-image: url(../images/nature.jpg);
+}
+.left div:nth-child(6) {
+  background-image: url(../images/mist.jpg);
+}
+.left div:nth-child(7) {
+  grid-row: span 3;
+  background-image: url(../images/paris.jpg);
+}
+.right {
+  display: grid;
+  grid-auto-rows: 180px;
+  padding-right: 15px;
+  grid-gap: 10px;
+}
+.right div:first-child {
+  grid-row: span 4;
+  background-image: url(../images/underwater.jpg);
+}
+.right div:nth-child(2) {
+  grid-row: span 2;
+  background-image: url(../images/ocean.jpg);
+}
+.right div:nth-child(3) {
+  grid-row: span 3;
+  background-image: url(../images/wedding.jpg);
+}
+.right div:nth-child(4) {
+  grid-row: span 2;
+  background-image: url(../images/mountainskies.jpg);
+}
+.right div:nth-child(5) {
+  grid-row: span 5;
+  background-image: url(../images/rocks.jpg);
+}
+.right div:last-child {
+  grid-row: span 3;
+  background-image: url(../images/underwater.jpg);
+}
+footer {
+  background: #eee;
+  padding: 70px 0px;
+  text-align: center;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer p {
+  font-size: 18px;
+}
+footer a {
+  font-size: 18px;
+  padding: 3px;
+}
+footer a i {
+  color: black;
+}
+footer a i:hover {
+  color: #ccc;
+}
+
+
+@media only screen and (max-width:780px){
+  #photo{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
